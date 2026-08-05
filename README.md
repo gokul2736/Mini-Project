@@ -1,4 +1,6 @@
 # Mini-Project
+
+## GeoSentinel: A Joint-Embedding Predictive Architecture for Explainable Geospatial Change Detection
 ```
                                                 🌍 EARTH
                                                    │
