@@ -24,7 +24,7 @@ Satellite downloads, weather/DEM collection, JEPA training, multimodal fusion, a
 
 ## Target time periods
 
-The intended historical comparison years are 2018, 2020, 2022, 2024, and 2026. Exact acquisition dates, sensor selection, seasonal windows, cloud thresholds, and compositing choices must be documented before building the final dataset. Sentinel-2 cannot provide observations for the beginning of 2018; verify temporal coverage per sensor and consider Landsat for earlier periods.
+The intended historical comparison years are 2018, 2020, 2022, 2024, and 2026. Exact acquisition dates, sensor selection, seasonal windows, cloud thresholds, and compositing choices must be documented before building the final dataset. Sentinel-2's mission began before 2018, so observations may be available for all listed target years; actual scene/product availability and cloud suitability must be checked for the selected AOI and season. Landsat provides a longer historical archive if the study is later extended to earlier years.
 
 ## Planned repository structure
 
