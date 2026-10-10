@@ -1,15 +1,17 @@
 # GeoSentinel Milestones
 
-## M1 — AOI Manager
+## M1 — Expanded CMA AOI
 - [x] Define target study area and boundary policy.
 - [x] Implement GeoJSON polygon validation.
 - [x] Add tests for valid and invalid geometries.
-- [ ] Acquire the authoritative/attributed Chennai CMA boundary.
-- [ ] Validate the real boundary and record its provenance.
+- [x] Screen the community `CMA.geojson`; reject it as master AOI because its area is approximately 1,193 km², consistent with the old CMA.
+- [ ] Download the OpenCity CUMTA boundary GeoJSON candidate.
+- [ ] Verify geometry, CRS, extent and area against the CMDA expanded-CMA map.
+- [ ] If confirmed, save as `aoi/Chennai_CMA.geojson` and complete the provenance register; otherwise request the expanded boundary from CMDA/TNGIS.
 
 ## M2 — Satellite catalogue search
 - [ ] Choose the catalogue/service after confirming access requirements.
-- [ ] Search for suitable imagery over the AOI and planned time windows.
+- [ ] Search for suitable imagery over the accepted AOI and planned time windows.
 - [ ] Save a machine-readable metadata manifest.
 
 ## M3 — Small sample download
@@ -28,6 +30,12 @@
 - [ ] Implement/adapt JEPA and downstream tasks.
 - [ ] Run quantitative evaluation and ablations.
 
-## M6 — Publication
+## M6 — Near-real-time data extension
+- [ ] Select one official near-real-time product (for example an INSAT/MOSDAC weather product).
+- [ ] Verify credentials, dataset ID, resolution, refresh cadence, licence and spatial coverage.
+- [ ] Implement a separate ingestion job with timestamps, freshness checks and immutable raw storage.
+- [ ] Keep live-ingestion experiments separate from the fixed historical benchmark.
+
+## M7 — Publication
 - [ ] Use only verified references and measured results.
 - [ ] Document limitations, data provenance, and reproducibility.
