@@ -19,9 +19,9 @@ study_area:
 temporal_plan:
   candidate_years: [2018, 2020, 2022, 2024, 2026]
   note: >
-    Verify sensor availability and consistent seasonal windows for each year.
-    Sentinel-2 cannot provide observations for the beginning of 2018; assess
-    Landsat or other appropriate historical data for earlier periods.
+    Verify scene/product availability, cloud suitability, and consistent
+    seasonal windows for every year. Sentinel-2's mission predates 2018 and
+    may cover all listed years; assess Landsat if extending further backward.
 
 primary_satellite_candidate:
   mission: Sentinel-2
@@ -29,7 +29,7 @@ primary_satellite_candidate:
   status: candidate; catalogue access and scene suitability are not yet verified
 
 implementation_status:
-  aoi_validation: implemented; tests pass in GitHub Actions
+  aoi_validation: implemented; tests passed in initial GitHub Actions run
   cma_boundary_acquisition: pending
   satellite_catalogue_search: not implemented
   satellite_download: not implemented
