@@ -3,12 +3,15 @@ project:
   framework: JEPA-based geospatial representation learning
 
 study_area:
-  name: Chennai Metropolitan Area
+  name: Expanded Chennai Metropolitan Area
   short_name: Chennai CMA
   state: Tamil Nadu
   country: India
   aoi_file: aoi/Chennai_CMA.geojson
   coordinate_reference_system: EPSG:4326
+  coverage_note: >
+    The expanded CMA includes relevant portions of Chennai, Tiruvallur,
+    Kancheepuram, Chengalpattu, and Arakkonam taluk in Ranipet district.
   boundary_policy: >
     Use a documented CMA boundary from an authoritative or clearly attributed
     source. Do not substitute whole district boundaries for CMA portions.
@@ -17,8 +20,8 @@ temporal_plan:
   candidate_years: [2018, 2020, 2022, 2024, 2026]
   note: >
     Verify sensor availability and consistent seasonal windows for each year.
-    Sentinel-2 coverage does not extend to the beginning of 2018; use an
-    appropriate historical source such as Landsat for periods it cannot cover.
+    Sentinel-2 cannot provide observations for the beginning of 2018; assess
+    Landsat or other appropriate historical data for earlier periods.
 
 primary_satellite_candidate:
   mission: Sentinel-2
@@ -26,7 +29,8 @@ primary_satellite_candidate:
   status: candidate; catalogue access and scene suitability are not yet verified
 
 implementation_status:
-  aoi_validation: in progress
+  aoi_validation: implemented; tests pass in GitHub Actions
+  cma_boundary_acquisition: pending
   satellite_catalogue_search: not implemented
   satellite_download: not implemented
   preprocessing: not implemented
