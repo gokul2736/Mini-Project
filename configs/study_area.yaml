@@ -1,0 +1,33 @@
+project:
+  name: GeoSentinel
+  framework: JEPA-based geospatial representation learning
+
+study_area:
+  name: Chennai Metropolitan Area
+  short_name: Chennai CMA
+  state: Tamil Nadu
+  country: India
+  aoi_file: aoi/Chennai_CMA.geojson
+  coordinate_reference_system: EPSG:4326
+  boundary_policy: >
+    Use a documented CMA boundary from an authoritative or clearly attributed
+    source. Do not substitute whole district boundaries for CMA portions.
+
+temporal_plan:
+  candidate_years: [2018, 2020, 2022, 2024, 2026]
+  note: >
+    Verify sensor availability and consistent seasonal windows for each year.
+    Sentinel-2 coverage does not extend to the beginning of 2018; use an
+    appropriate historical source such as Landsat for periods it cannot cover.
+
+primary_satellite_candidate:
+  mission: Sentinel-2
+  product: Level-2A
+  status: candidate; catalogue access and scene suitability are not yet verified
+
+implementation_status:
+  aoi_validation: in progress
+  satellite_catalogue_search: not implemented
+  satellite_download: not implemented
+  preprocessing: not implemented
+  jepa_training: not implemented
