@@ -8,7 +8,7 @@ GeoSentinel is an evolving research project exploring self-supervised representa
 
 ## Initial study area
 
-The target study area is the **Chennai Metropolitan Area (CMA), Tamil Nadu, India**, covering the relevant CMA portions of Chennai, Tiruvallur, Kanchipuram, and Chengalpattu districts. The project must use a documented, authoritative or clearly attributed CMA boundary rather than assuming that whole district boundaries equal the CMA.
+The target study area is the **expanded Chennai Metropolitan Area (CMA), Tamil Nadu, India**. CMDA's published materials describe the expansion from 1,189 km² to 5,904 km² and include parts of Tiruvallur, Kancheepuram, Chengalpattu, and Arakkonam taluk in Ranipet district. The AOI must follow the CMA boundary itself—not entire district boundaries. See the [CMDA reference document](https://cmdachennai.gov.in/pdfs/tenders/BlueGreenInfrastructure/TOR.pdf) and record the chosen boundary source in the provenance register.
 
 ## First milestone: AOI Manager
 
@@ -16,7 +16,7 @@ The first implementation milestone is to create a reproducible geospatial bounda
 
 1. Acquire a documented CMA boundary.
 2. Save it as GeoJSON.
-3. Validate that the file has a non-empty polygon geometry and a declared coordinate reference system (WGS 84 / EPSG:4326 for GeoJSON coordinates).
+3. Validate that the file has a non-empty polygon geometry and WGS 84 longitude/latitude coordinates (EPSG:4326).
 4. Record provenance and source information.
 5. Use the validated AOI for later satellite and supporting-data searches.
 
@@ -24,15 +24,13 @@ Satellite downloads, weather/DEM collection, JEPA training, multimodal fusion, a
 
 ## Target time periods
 
-The intended historical comparison years are 2018, 2020, 2022, 2024, and 2026. Exact acquisition dates, sensor selection, seasonal windows, cloud thresholds, and compositing choices must be documented before building the final dataset. Sentinel-2 cannot provide 2018 observations before its mission's data availability, so the source and temporal coverage should be verified per year.
+The intended historical comparison years are 2018, 2020, 2022, 2024, and 2026. Exact acquisition dates, sensor selection, seasonal windows, cloud thresholds, and compositing choices must be documented before building the final dataset. Sentinel-2 cannot provide observations for the beginning of 2018; verify temporal coverage per sensor and consider Landsat for earlier periods.
 
 ## Planned repository structure
 
 ```text
 Mini-Project/
 ├── aoi/
-│   ├── README.md
-│   └── .gitkeep
 ├── configs/
 │   └── study_area.yaml
 ├── data/
@@ -42,15 +40,11 @@ Mini-Project/
 ├── docs/
 │   ├── data-provenance.md
 │   └── milestones.md
-├── scripts/
-├── src/
-│   └── geosentinel/
-│       ├── __init__.py
-│       └── aoi/
+├── src/geosentinel/aoi/
 ├── tests/
 ├── .env.example
 ├── .gitignore
-├── requirements.txt
+├── pyproject.toml
 └── README.md
 ```
 
@@ -64,9 +58,9 @@ Mini-Project/
 
 See [data-sources.md](data-sources.md) for the initial dataset categories.
 
-## Development setup
+## Local development setup
 
-Use Python 3.11 or 3.12 in an isolated virtual environment. Install packages from `requirements.txt`, then run tests and scripts as described in their module README files. The actual setup commands will be added alongside the first runnable AOI module.
+Use Python 3.11 or 3.12 in an isolated virtual environment. Follow the setup commands in the project walkthrough and run the tests before making changes.
 
 ## Research workflow
 
