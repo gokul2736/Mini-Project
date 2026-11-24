@@ -1,4 +1,4 @@
-REPOSITORY AUDIT REPORT
+```REPOSITORY AUDIT REPORT
 
 1. What Exists
 
@@ -8,7 +8,6 @@ Python: 3.11.9, geosentinel installed in editable mode
 Package installed: Yes (pip install -e . was done)
 
 Source Code (56 Python files)
-
 ┌───────────────────┬───────┬───────────────────────────────────────────────────────────────────┐
 │      Module       │ Files │                              Purpose                              │
 ├───────────────────┼───────┼───────────────────────────────────────────────────────────────────┤
@@ -114,8 +113,6 @@ Other Artifacts
 │ module                  │                                       │                                                                   │
 └─────────────────────────┴───────────────────────────────────────┴───────────────────────────────────────────────────────────────────┘
 
----
-
 Recommended Immediate Actions (Priority Order)
 
 1. Fix the failing test (cache expiry race condition — 2-minute fix)
@@ -124,3 +121,4 @@ Recommended Immediate Actions (Priority Order)
 4. Add .vs/ and Data_downloading_algorithm/ to .gitignore
 5. Commit the weather module + all outstanding clean changes
 6. Begin Bhoonidhi integration (once you share the KT notes)
+```
