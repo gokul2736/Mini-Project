@@ -3,7 +3,7 @@
 ## A Joint-Embedding Predictive Architecture for Explainable Geospatial Change Detection
 
 <p align="center">
-  <img src="docs/assets/geosentinel-banner.png" alt="GeoSentinel — Geospatial Intelligence System" width="100%">
+  <img src="https://images.openai.com/static-rsc-4/S15lz4PBf4oBGDUNKfPZfGA1sSlLipzh_RFSe73MmgQ2NgnKw_XKMy_PIE8ml9lXielbnHRwyviP5JdVLCvcCsCilcn5vbzqg-7_QEw8AvKupHSYVt5pl8zA4MhR1wHaT2Z6Qta7TMI2tqiKbiyVcVIBIMa9takHUS5YpWjJKTK6120NvbL7WwIRsivJ_r0D?purpose=fullsize" width="100%">
 </p>
 
 <p align="center">
