@@ -1,9 +1,5 @@
-# GeoSentinel
-
-## A Joint-Embedding Predictive Architecture for Explainable Geospatial Change Detection
-
 <p align="center">
-  <img src="https://images.openai.com/static-rsc-4/S15lz4PBf4oBGDUNKfPZfGA1sSlLipzh_RFSe73MmgQ2NgnKw_XKMy_PIE8ml9lXielbnHRwyviP5JdVLCvcCsCilcn5vbzqg-7_QEw8AvKupHSYVt5pl8zA4MhR1wHaT2Z6Qta7TMI2tqiKbiyVcVIBIMa9takHUS5YpWjJKTK6120NvbL7WwIRsivJ_r0D?purpose=fullsize" width="100%">
+  <img width="1584" height="672" alt="geosentinel-workflow-banner" src="https://github.com/user-attachments/assets/a4a3eb67-78b3-4720-ad52-89a777581b32" />
 </p>
 
 <p align="center">
